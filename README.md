@@ -13,6 +13,17 @@ cargo add --git https://github.com/rapidrecast/bevy_2d_sprite_animations.git
 
 # Usage
 
+## Add the plugin 
+
+```rust
+fn main() {
+    let mut app = App::new();
+    app.add_plugins(
+        (DefaultPlugins, SpriteAnimationPlugin)
+    );
+}
+```
+
 ## Declare a sprite animation component
 ```rust
 #[derive(Component)]
