@@ -1,0 +1,8 @@
+[package]
+name = "bevy_2d_sprite_animations"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = "0"
+bevy_sprite_render = "0.18.0"
