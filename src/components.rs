@@ -8,6 +8,8 @@ use std::time::Duration;
 /// Example usage
 ///
 ///```rust
+/// use bevy_2d_sprite_animations::AnimatedKeyframes;
+///
 /// #[derive(Component)]
 /// struct MyWalkingAnimation;
 ///
@@ -15,7 +17,7 @@ use std::time::Duration;
 ///
 ///   let animation_ref = commands.spawn((
 ///     MyWalkingAnimation,
-///     AnimatedFrequency::new(vec![
+///     AnimatedKeyframes::new(vec![
 ///         // The first 15 frames happen in 500ms
 ///         (0..15, Duration::from_millis(500)),
 ///         // The last 15 frames happen in 2s
